@@ -1,0 +1,19 @@
+Result   String
+1        a
+1        aa
+1        aba
+1        abba
+1        abbcbba
+0        ab
+0        abc
+1        radar
+1        bob
+1        ana
+1        avid diva
+1        Amore, Roma
+1        A Toyota's a toyota
+1        A Santa at NASA
+1        C++
+1        A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!
+0        This is a palindrome
+0        palindrome
