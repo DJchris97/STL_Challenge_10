@@ -2,6 +2,8 @@
 #include <cctype>
 #include <string>
 #include <deque>
+#include <vector>
+#include <iomanip>
 
 
 
@@ -9,10 +11,19 @@
 bool is_pallindrome ( const std::string &s);
 
 
-int main() {
-    std::cout <<is_pallindrome("quy.12yu0q")<< std::endl;
-    
-	return 0;
+int main()
+{
+    std::vector<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
+        "avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
+        "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
+   
+    std::cout << std::boolalpha;
+    std::cout << std::setw(8) << std::left << "Result" << "String" << std::endl;
+    for(const auto& s : test_strings) {
+        std::cout << std::setw(8) << std::left << is_pallindrome(s)  << s << std::endl;
+    }
+    std::cout << std::endl;
+    return 0;
 }
 
 
